@@ -32,7 +32,7 @@
         <div class="collapse navbar-collapse text-center" id="navbarNav">
             <ul class="navbar-nav">
             <li class="nav-item active">
-                    <a href="index.php" class="nav-link" >
+                    <a href="index.html" class="nav-link" >
                         Inicio
                     </a>
                 </li>
