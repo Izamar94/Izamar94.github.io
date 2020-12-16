@@ -421,32 +421,34 @@
           <h2>Sucursales</h2>
           <p>A continuación te mostramos una lista de nuestras sucursales con las que contamos dentro del Estado de Hidalgo</p>
         </div>
-        <table class="table ">
-          <thead>
-            <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>John</td>
-              <td>Doe</td>
-              <td>john@example.com</td>
-            </tr>
-            <tr>
-              <td>Mary</td>
-              <td>Moe</td>
-              <td>mary@example.com</td>
-            </tr>
-            <tr>
-              <td>July</td>
-              <td>Dooley</td>
-              <td>july@example.com</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+              </tr>
+              <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+              </tr>
+              <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section><!-- End Team Section -->
 
@@ -496,16 +498,16 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Ingresa un nombre correcto" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Porfavor ingresa un correo válido" />
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Ingresa un asunto que contenga al menos más de 8 caracteres" />
                 <div class="validate"></div>
               </div>
               <div class="form-group mt-3">
