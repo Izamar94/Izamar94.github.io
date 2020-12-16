@@ -79,16 +79,6 @@
           <h2>Sucursales</h2>
         </div>
         <div class="sucursales table-responsive">
-        <?php
-                require_once 'libExcel/Classes/PHPExcel.php';
-                $archivo = "sucursal.xlsx";
-                $inputFileType = PHPExcel_IOFactory::identify($archivo);
-                $objReader = PHPExcel_IOFactory::createReader($inputFileType);
-                $objPHPExcel = $objReader->load($archivo);
-                $sheet = $objPHPExcel->getSheet(0); 
-                $highestRow = $sheet->getHighestRow(); 
-                $highestColumn = $sheet->getHighestColumn();
-            ?>
           <table class="table table-bordered">
             <thead>
               <tr class="text-center">
@@ -100,22 +90,48 @@
               </tr>
             </thead>
             <tbody>
-            <?php
-                    $num =0;
-                    for ($row = 2; $row <= $highestRow; $row++)
-                    {
-                        $num++;
-                ?>
-                    <tr>
-                        <th><?php echo $num;?></th>
-                        <td><?php echo $sheet->getCell("A".$row)->getValue();?></td>
-                        <td><?php echo $sheet->getCell("B".$row)->getValue();?></td>
-                        <td><?php echo $sheet->getCell("C".$row)->getValue();?></td>
-                        <td><?php echo $sheet->getCell("D".$row)->getValue();?></td>
-                    </tr>
-                <?php
-                    }
-                ?>
+              <tr>
+                  <th>1</th>
+                  <th>Ciudad de México</th>
+                  <th>771-125-6874</th>
+                  <th>Izamar Mejía Cruz</th>
+                  <th>9:00 - 6:00</th>
+              </tr>
+              <tr>
+                <th>2</th>
+                <th>Guadalajara</th>
+                <th>951-784-8930</th>
+                <th>Carolina de la Fuente López</th>
+                <th>9:00 - 6:00</th>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th>Hermosillo</th>
+                <th>102-178-8634</th>
+                <th>Erick Bautista Hernández</th>
+                <th>9:00 - 6:00</th>
+            </tr>
+            <tr>
+              <th>4</th>
+              <th>San Luis Potosí</th>
+              <th>321-251-3521</th>
+              <th>Martin Sánchez Melo</th>
+              <th>9:00 - 6:00</th>
+            </tr>
+            <tr>
+              <th>5</th>
+              <th>Morelia</th>
+              <th>540-102-3012</th>
+              <th>Juan Contreras Noeggerath</th>
+              <th>9:00 - 6:00</th>
+            </tr>
+            <tr>
+              <th>6</th>
+              <th>Querétaro</th>
+              <th>466-795-1002</th>
+              <th>Luisa Cruz Benito</th>
+              <th>9:00 - 6:00</th>
+            </tr>
             </tbody>
           </table>
         </div>
